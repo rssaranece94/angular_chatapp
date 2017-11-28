@@ -5,7 +5,7 @@ This chat application can be deployed locally and also deployed live.
 
 **Usage**
 - Node js should be installed in your machine.
-- Clone the repository
+- Clone the repository using this link [https://github.com/rssaranece94/angular_chatapp/](https://github.com/rssaranece94/angular_chatapp/)
 - Edit the database url in config file to link it to your local or production mongodb url
 - Run the command window inside the cloned folder and run **npm install**
 - After installation complete run **node server.js**
