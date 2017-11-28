@@ -1,0 +1,32 @@
+<div class="login">
+    <div class="login-cont">
+        <form id="login-form" ng-submit="main.doLogin()" novalidate>
+
+            <div class="login-sec">
+                <div class="input-control modern">
+					<input type="email" name="email" ng-model="main.loginData.email" required>
+                    <!-- <input type="email" name="email"> -->
+                    <i class="fa fa-user"></i>
+                    <span class="label">Email</span>
+                </div>
+                <div class="input-control modern">
+					<input type="password" name="password" ng-model="main.loginData.password" required>
+                	<!-- <input type="password" name="password"> -->
+                    <i class="fa fa-lock"></i>
+                    <span class="label">Password</span>
+                </div>
+            
+                <div class="btn-group">
+                    <button type="text" class="btn btn-success"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</button>
+                    <span class="forgot-pwd"><a href="/chats/forgot">Forgot Password</a></span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    jq(function () {
+        inputBlur();
+        formValidate();
+    });
+</script>

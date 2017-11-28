@@ -1,0 +1,1023 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.container {
+    width: 100%;
+    max-width: 980px;
+}
+.header {
+    float: left;
+    width: 100%;
+    min-height: 0px;
+    padding: 0px;
+    box-shadow: 0px 2px 5px 0px #888;
+    -webkit-box-shadow: 0px 2px 5px 0px #888;
+}
+.header .navbar {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    border-radius: 0px;
+}
+.main {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.main-cont {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+.navbar .navbar-brand, .navbar .navbar-brand {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+} 
+.navbar-nav li .fa {
+    font-size: 15px;
+    top: 1px;
+    position: relative;
+    margin: 0px 5px 0px 0px;
+}
+.navbar-nav li .dropdown-menu {
+    padding: 0px;
+    border-radius: 0px 0px 3px 3px;
+    border: 0px;
+}
+.dropdown-menu > li > a {
+    padding: 8px 20px;
+}
+.dropdown-menu > li > a .fa {
+    font-size: 14px;
+}
+
+/* ---- Index ---- */
+.index {    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 0px;
+    margin: -87px 0px 0px -151px;
+    color: #000;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    border: 1px solid #aaa;
+}
+.index-cont {
+    float: left;
+    width: 100%;
+    padding: 30px 10px;
+    margin: 0px;
+}
+.index-cont h1 {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+    font-size: 20px;
+}
+.index-cont p {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+    font-size: 14px;
+}
+.index-cont .btn {    
+    padding: 5px 25px;
+    margin: 0px 10px 0px 10px;
+    border-radius: 0px;
+}
+/* ---- Index ---- */
+
+/* ---- Log In---- */
+/*.login {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    padding: 0px;
+    margin: 0px 0px 0px -200px;
+    width: auto;
+    text-align: center;
+    z-index: 2;
+}*/
+.login {
+    padding: 0px;
+    margin: 100px 0px 100px 0px;
+    width: auto;
+    text-align: center;
+    z-index: 2;
+}
+.login-cont {
+	position: relative;
+    max-width: 400px;
+    min-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 10px 10px 10px;
+    min-height: 350px;
+    background: #FDFDFD;
+    border: 1px solid #eee;
+    display: inline-block;
+}
+.login-cont:before, .login-cont:after {
+	position: absolute;
+	z-index: -1;
+	content: "";
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	top: 80%;
+	max-width: 300px;
+	background: #777;	
+	box-shadow: 0px 15px 10px 0px #D7DBDC;
+	-webkit-transform: rotate(-6deg);
+	    -moz-transform: rotate(-6deg);
+	    -ms-transform: rotate(-6deg);
+	    -o-transform: rotate(-6deg);
+	    transform: rotate(-6deg);
+}
+.login-cont:after {
+	-webkit-transform: rotate(6deg);
+	-moz-transform: rotate(6deg);
+	-ms-transform: rotate(6deg);
+	-o-transform: rotate(6deg);
+	transform: rotate(6deg);
+	right: 10px;
+	left: auto;
+}
+.login-cont .input-control {
+    max-width: 250px;
+    width: 100%;
+    margin: 15px 10px 0px 32px;
+}
+.login-cont .input-control input:focus {
+    color: #aaa;
+}
+.login-cont .input-control .helper-button {
+    height: 15px;
+    top: 20px;
+}
+.login-cont .form-group {
+    float: left;
+    width: 100%;
+}
+.login-cont .form-group input {
+    float: left;
+    height: 50px;
+    border-radius: 0px;
+}
+.login-cont .btn-group {
+    float: left;
+    width: 100%;
+    text-align:center;
+    margin: 30px 0px 0px 0px;
+}
+.login-cont .btn-group button {
+    float: none;
+    border-radius: 0px;
+}
+.login-cont .btn-group span {
+    float: left;
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+    font-size: 12px;
+}
+.login-cont .forgot-pwd {
+    color: #aaa;
+}
+.login-cont .forgot-pwd:hover {
+    color: #EA9C24;
+    cursor:pointer;
+    text-decoration: underline;
+}
+/* ---- Log In---- */
+
+/* ---- Sign Up---- */
+/*.signup {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    padding: 0px;
+    margin: 0px 0px 0px -200px;
+    width: auto;
+    text-align: center;
+    z-index: 2;
+}*/
+
+.signup {
+    padding: 0px;
+    margin: 100px 0px 100px 0px;
+    width: auto;
+    text-align: center;
+    z-index: 2;
+}
+.signup-cont {
+    position: relative;
+    max-width: 400px;
+    min-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 10px 10px 10px;
+    min-height: 400px;
+    background: #FDFDFD;
+    border: 1px solid #eee;
+    display: inline-block;
+}
+.signup-cont:before, .signup-cont:after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #777;   
+    box-shadow: 0px 15px 10px 0px #D7DBDC;
+    -webkit-transform: rotate(-6deg);
+        -moz-transform: rotate(-6deg);
+        -ms-transform: rotate(-6deg);
+        -o-transform: rotate(-6deg);
+        transform: rotate(-6deg);
+}
+.signup-cont:after {
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    transform: rotate(6deg);
+    right: 10px;
+    left: auto;
+}
+.signup-cont .input-control {
+    max-width: 250px;
+    width: 100%;
+    margin: 15px 10px 0px 32px;
+}
+.signup-cont .input-control input:focus {
+    color: #aaa;
+}
+.signup-cont .input-control .helper-button {
+    height: 15px;
+    top: 20px;
+}
+.signup-cont .form-group {
+    float: left;
+    width: 100%;
+}
+.signup-cont .form-group input {
+    float: left;
+    height: 50px;
+    border-radius: 0px;
+}
+.signup-cont .btn-group {
+    float: left;
+    width: 100%;
+    text-align:center;
+    margin: 40px 0px 0px 0px;
+}
+.signup-cont .btn-group button {
+    float: none;
+    border-radius: 0px;
+}
+.signup-cont .btn-group span {
+    float: left;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    font-size: 12px;
+}
+.signup-cont .forgot-pwd {
+    color: #aaa;
+}
+.signup-cont .forgot-pwd:hover {
+    color: #EA9C24;
+    cursor:pointer;
+    text-decoration: underline;
+}
+/* ---- Sign Up---- */
+
+
+/*------- Modern Input Styles --------*/
+.input-control.modern {
+    position: relative;
+    width: 250px;
+    height: 35px;
+    display: inline-block;
+    font-size: 14px;
+}
+.input-control.modern input {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    border: 0;
+    border-bottom: 2px #DDDDDD solid;
+    background-color: transparent;
+    outline: none;
+    padding: 3px 0px 3px 0px;
+    width: 100%;
+    z-index: 2;
+    height: 25px;
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+.input-control.modern .label {
+    opacity: 1;
+    top: 10px;
+    left: 0;
+    transition: all 0.3s linear;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 4px 10px 4px 0px;
+}
+.input-control.modern .label {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    color: #aaa;
+}
+.input-control.modern input:focus {
+    border-color: #222;
+}
+.input-control.modern input:focus ~ .label {
+    opacity: 1;
+    font-size: 12px;
+    color: #222;
+    -webkit-transform: translateY(-18px);
+    transform: translateY(-18px);
+    transition: all 0.3s linear;
+}
+.input-control.modern .fa {
+    position: absolute;
+    color: #aaa;
+    top: 10px;
+    left: -25px;
+    font-size: 22px;
+}
+.input-control.modern input:focus ~ .fa {
+    color: #222;
+}
+.help-block {
+    display: block;
+    margin: 5px 0px 0px 0px;
+    color: #FF0000;
+}
+.has-success input {
+    border-color: #008000 !important;
+}
+.has-error input {
+    border-color: #FF0000 !important;
+}
+.alert-danger {
+    text-align: center;
+    border-radius: 0px;
+}
+/*---------- Modern Input ---------*/
+
+
+/*---------- Profile page ---------*/
+ul {
+    list-style-type: none;
+}
+
+/*---------- Header section ---------*/
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    float: left;
+    width: 100%;
+    min-height: 50px;
+    font-size: 14px;
+    color: #156D6D;
+    background: #E6E6E4;
+    padding:12px 20px 12px 20px;
+    z-index: 3;
+    box-shadow: 0px 2px 5px 0px #888;
+    -webkit-box-shadow: 0px 2px 5px 0px #888;
+}
+/*---------- Main Section ---------*/
+.user-profile {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*---------- Left side menu ---------*/
+.left {
+    position: fixed;
+    width: 270px;
+    padding: 50px 0px 0px 0px;
+    margin: 0px;
+    background: #F3F3F3;
+    z-index: 2;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    box-shadow: 1px 0px 5px 0px #888;
+    -webkit-box-shadow: 1px 0px 5px 0px #888;
+    -webkit-transition: 0.7s linear margin;
+    -o-transition: 0.7s linear margin;
+    transition: 0.7s linear margin;
+}
+.left .profile {
+    float: left;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background: url(/images/bg.jpg) top center no-repeat;
+    background-position: 0px 100%;
+    background-size: cover;
+}
+.left .profile .user-name {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px 10px 10px;    
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-weight: bold;
+}
+.left .user-list {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+}
+.left .user-list-head {
+    float: left;
+    width: 100%;
+    padding: 4px;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    background: #0A6FC7;
+    color: #fff;
+}
+.left .user-list ul {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.left .user-list ul li {
+    float: left;
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+    margin: 0px;
+    font-size: 14px;
+    line-height: 30px;
+    position: relative;
+    text-transform: capitalize;
+    border-bottom: 1px dashed #ddd;
+}
+.left .user-list ul li.active, .left .user-list ul li:hover {
+    background: #46F7E7;
+    cursor: pointer;
+}
+.left .user-list ul li .prop {
+    float: right;
+    margin: 0px 0px 0px 0px;
+    color: #ddd;
+}
+.left .user-list ul li .fa {
+    float: left;
+    margin: 8px 0px 0px 5px;
+    color: #ddd;
+}
+.left .user-list ul li .fa-comment-o {
+    display: none;
+    color: #f46333 !important;
+}
+.left .user-list ul li.live .fa {
+    color: #00A000;
+}
+
+
+/*---------- Right side section ---------*/
+.right {
+    float: left;
+    width:100%;
+    height: 100%;
+    min-height: 300px;
+    padding: 50px 0px 0px 270px;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+}
+.right .user-details {
+    float: left;
+    width: 100%;
+    padding: 20px 10px 20px 10px;
+    margin: 0px 0px 80px 0px;
+}
+.right .data {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    position: relative;
+}
+.right .data>span>span {
+    min-width: 200px;
+    width: auto;
+    font-size: 13px;
+    padding: 8px 20px 8px 10px;
+    margin: 5px 0px 5px 0px;
+    border-radius: 10px;
+    line-height: 14px;
+    position: relative;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.right .data .cover {
+    float: left;
+    width: 100%;
+}
+.right .data>span .options .fa:hover {
+    cursor: pointer;
+}
+.right .data>span.sent-mes {
+    text-align: right;
+    background: #CECBCB;
+    border-top-left-radius: 0px;
+}
+.right .data>span.received-mes {
+    background: #eee;
+    border-bottom-right-radius: 0px;
+}
+.right .data>span .options {
+    display: none;
+}
+.right .data>span .file .fa {
+    font-size: 18px;
+    top: 1px;
+    position: relative;
+    margin: 0px 0px 0px 5px;
+}
+.data .file img {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0px 5px;
+}
+.right .data .mes {
+    line-height: 15px;
+    display: inline-block;
+}
+.right .data .show-option .my-info-one, .right .data .show-option .my-info-two {
+    margin: 5px 0px 25px 0px;
+}
+.right .message-input {
+    position: fixed;
+    bottom: 37px;
+    right: 0px;
+    left: 0px;
+    margin: 0px 0px 0px 270px;
+    display: none;
+}
+.right .data .input {
+    float: left;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+.right .data .input textarea {
+    float: left;
+    width: 100%;
+    border-radius: 0px;
+    border: 0px;
+    border-top: 1px solid #ddd;
+}
+.right .data .my-info-one {
+    float: right;
+    background: #efefef;
+    text-align: right;
+    box-shadow: -1px 1px 2px 0px #ddd;
+    -webkit-box-shadow: -1px 1px 2px 0px #ddd;
+}
+.right .data .my-info-one:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -12px;
+    width: 0px;
+    height: 0px;
+    border: 7px solid #e9e8e8;
+    border-color: transparent transparent transparent #efefef;
+    z-index: -1;
+}
+.right .data .my-info-one.edited {
+    background: #d8d8d8;
+}
+.right .data .my-info-one.edited:before {
+    border-color: transparent transparent transparent #d8d8d8;
+}
+.right .data .my-info-one.deleted .mes {
+    color: #aaa;
+}
+.right .data .my-info-one.deleted .fa-trash-o {
+    pointer-events: none!important;
+}
+.right .data>span .my-info-one .options {
+    position: absolute;
+    bottom: -23px;
+    font-size: 11px;
+    right: 10px;
+}
+.right .data .my-info-one .options .fa {
+    font-size: 14px;
+    margin: 0px 5px 0px 5px;
+}
+.right .data .my-info-two {
+    float: left;
+    background: #ebf5fd;
+    text-align: left;
+    box-shadow: 1px 1px 2px 0px #CCC;
+    -webkit-box-shadow: 1px 1px 2px 0px #CCC;
+}
+.right .data>span .my-info-two .options {
+    position: absolute;
+    bottom: -21px;
+    font-size: 11px;
+    left: 10px;
+}
+.right .data .my-info-two .options .fa {
+    font-size: 14px;
+    margin: 0px 5px 0px 5px;
+}
+.right .data .my-info-two:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -12px;
+    width: 0px;
+    height: 0px;
+    border: 7px solid #e6e6e6;
+    border-color: transparent #ebf5fd transparent transparent;
+    z-index: -1;
+}
+.right .data .my-info-two.edited {
+    background: #c0dcf3;
+}
+.right .data .my-info-two.edited:before {
+    border-color: transparent #c0dcf3 transparent transparent;
+}
+.right .data .my-info-two.deleted .mes {
+    color: #aaa;
+}
+.right .data .my-info-two.deleted .fa-trash-o {
+    pointer-events: none!important;
+}
+.right .option-details {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.right .option-details li {
+    display: none;
+}
+.right li.settings {
+    float: left;
+    width: 100%;
+    padding: 30px 20px 10px 20px;
+    min-height: 370px;
+    display: block;
+}
+.right li.settings .form-group {
+    float: left;
+    width: 46%;
+    margin: 1% 2.5%;
+}
+.right li.settings .form-group:nth-child(odd) {
+    margin: 1% 3% 1% 1%;
+}
+.right li.settings .form-group:nth-child(even) {
+    margin: 1% 1% 1% 3%;
+}
+.right li.settings .input-control.modern {
+    width: 100%;
+    height: 30px;
+}
+.right li.settings .input-control.modern input {
+    top: 5px;
+    color: #bbb;
+    padding: 3px 10px 3px 10px;
+}
+.right li.all-users {
+    float: left;
+    width: 100%;
+    padding: 30px 20px 30px 20px;
+}
+.right li.all-users span {
+    float: left;
+    padding: 5px 15px 5px 15px;
+    margin: 0px 20px 20px 0px;
+    background: #ddd;
+    border-radius: 20px;
+}
+.right li.image img {
+    width: 100%;
+    max-width: 200px;
+    padding: 3px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+/*---------- Messaging menu ---------*/
+form#user-message {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+form#user-message .form-control {
+    float: left;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    padding: 10px 55px 10px 10px;
+    border-radius: 0px;
+    border:0px;
+    border-top: 1px solid #ddd;
+    box-shadow: none;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+}
+form#user-message .form-control:focus {
+    box-shadow: none;
+    background: #f7f7f7;
+}
+form#user-message button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 11px 10px 10px;
+    border-radius: 50%;
+}
+form#user-message label.btn-attach {
+    position: absolute;
+    top: -100px;
+    right: 12px;
+    padding: 8px 11px 7px 10px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    display: inline-block;
+    background: #ddd;
+    cursor: pointer;
+    margin: 0px;
+    color: #000;
+}
+form#user-message input[type="file"] {
+    display: none;
+}
+
+/*---------- footer section ---------*/
+footer {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    color: #fff;
+    font-size: 14px;
+    background: #2b2b2b;
+    border-top: 1px solid #414141;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 0px 0px 270px;
+}
+footer p {
+    float: left;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+footer a:hover {
+    color: #fff;
+}
+
+
+/*---------- highlighting styles ---------*/
+.unread {
+    color: #FF8010 !important;
+}
+.min-right {
+    height: 400px !important;
+}
+
+/*
+.right .data>span {
+    margin: 0px !important;
+}
+.min-height-login, .min-height-signup {
+    margin: 0px 0px 0px -150px;
+    top: 60px;
+}
+.min-height-wid-login, .min-height-wid-signup {
+    margin: 0px 0px 0px -200px;
+    top: 60px;
+}
+.min-height-home {
+    height: 500px !important;
+}*/
+
+
+.min-mesinput {
+    position: relative !important;
+    width: 100% !important;
+    margin: 0px !important;
+    bottom: 0px !important;
+    height: 60px !important;
+}
+.min-footer {
+    position: relative !important;
+    width: 100% !important;
+    margin: 0px !important;
+}
+.navbar-header .menu-toggle {
+    display: none;
+    height: 34px;
+    width: 44px;
+}
+.menu-toggle.menu-open {
+    padding: 14px 9px 14px 9px;
+}
+.menu-toggle .icon-bar {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.menu-toggle.menu-open .icon-bar {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 24px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.menu-toggle.menu-open .icon-bar.one {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 1px;
+}
+.menu-toggle.menu-open .icon-bar.two {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    bottom: 1px;
+}
+.min-rotateback {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg); 
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+
+
+/*---------- Responive styles ---------*/
+@media (min-width:768px) and (max-width:991px) {
+}
+@media (min-width:640px) and (max-width:767px) {
+}
+
+@media screen and (max-width:639px) {
+    .header {
+        min-height: 36px;
+    }
+    .navbar {
+        min-height: 44px;
+    }
+    .navbar-header .menu-toggle {
+        display: block;
+    }
+    .menu-toggle.menu-open {
+        padding: 11px 6px 11px 6px;
+    }
+    .navbar-brand {
+        height: 44px;
+        padding: 13px 15px;
+    }
+    .navbar-toggle {
+        padding: 6px 7px;
+    }
+    .navbar-header .menu-toggle {
+        height: 28px;
+        width: 38px;
+    }
+    .login-cont .input-control .helper-button, .signup-cont .input-control .helper-button  {
+        height: 15px;
+        top: 16px;
+    }
+    .left {
+        width: 100%;
+        max-width: 270px;
+        border: 0px;
+        padding: 44px 0px 0px 0px;
+    }
+    .left-hide {
+        margin: 0px 0px 0px -275px !important;
+    }
+    .left .profile {
+        height: 120px;
+    }
+    .right {
+        padding: 44px 0px 0px 0px;
+    }
+    .right .message-input {
+        margin: 0px;
+        height: 37px !important;
+        bottom: 35px;
+    }
+    form#user-message .form-control {
+        height: 37px;
+    }
+    form#user-message button {
+        top: 6px;
+        font-size: 10px;
+        padding: 5px 6px 5px 5px;
+    }
+    footer {
+        margin: 0px;
+        font-size: 12px;
+        padding: 10px 10px 10px 10px;
+    }
+}
+@media (min-width:480px) and (max-width:639px) {
+}
+
+@media (min-width:430px) and (max-width:479px) {
+    .right li.settings .form-group {
+        width: 100%;
+    }
+    .right li.settings .form-group:nth-child(odd) {
+        margin: 1% 0% 1% 0%;
+    }
+    .right li.settings .form-group:nth-child(even) {
+        margin: 1% 0% 1% 0%;
+    }
+}
+
+@media screen and (max-width:429px) {
+    .login-cont {
+        padding: 30px 10px 10px 10px;
+        min-width: auto;
+        min-height: 330px;
+    }
+    .signup-cont {
+        min-width: auto;
+    }
+    .input-control.modern .fa {
+        top: 14px;
+        font-size: 18px;
+    }
+    .login-cont .input-control {
+    	width: 70%;
+    }
+    .signup-cont .input-control {
+        width: 70%;
+    }
+    .right li.settings .form-group {
+        width: 100%;
+    }
+    .right li.settings .form-group label {
+        margin: 0px;
+    }
+    .right li.settings .form-group:nth-child(odd) {
+        margin: 0px 0px 20px 0px;
+    }
+    .right li.settings .form-group:nth-child(even) {
+        margin: 0px 0px 20px 0px;
+    }
+}

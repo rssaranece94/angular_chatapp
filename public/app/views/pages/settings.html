@@ -1,0 +1,175 @@
+<div class="user-profile">
+    <div class="left col-md-3">
+        <div class="scrollbar default-skin demo">
+            <div class="profile">
+                <span class="user-name" id="{{ main.user.userid }}">{{ main.user.username }}</span>
+            </div>
+            <div class="user-list">
+                <span class="user-list-head">Live Users</span>
+                <ul>
+                    <li ng-repeat="contact in main.contacts" id="{{ contact.userid }}" ng-click="main.clickedMe(contact.userid)">{{ contact.username }}<span class="prop"><i class="fa fa-comment-o" aria-hidden="true"></i><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="right col-md-9">
+        <div class="user-details" id="">
+                <div class="data">
+                                      					<div class="top">
+                                                  <div class="container">
+                                                      <div class="top-cont">
+                                                          <div ng-controller="upload">
+                                                              <p>Hello {{name}}!</p>
+                                                              <input type="file" ng-file-model="files" multiple />
+                                                              <button type="button" ng-click="upload()">Upload</button>
+
+                                                              <p ng-repeat="file in files">
+                                                                  {{file.name}}
+                                                              </p>
+
+                                                              <span class="downlods"></span>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+
+
+
+
+
+
+<!-- based on: http://www.matlus.com/html5-file-upload-with-progress/ -->
+<html ng-app="app">
+<style type="text/css">
+ table { border-collapse: collapse; }
+.percent {
+    position: absolute; width: 300px; height: 14px; z-index: 1; text-align: center; font-size: 0.8em; color: white;
+}
+.progress-bar {
+    width: 300px; height: 14px;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6666cc), to(#4b4b95));
+    border-image: initial;
+}
+.uploaded {
+    padding: 0;
+    height: 14px;
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#66cc00), to(#4b9500));
+    border-image: initial;
+}
+
+</style>
+<!-- <body ng-controller="FileUploadCtrl">
+    <div class="row">
+        <label for="fileToUpload">Select a File to Upload</label><br />
+        <input type="file" ng-model-instant id="fileToUpload" multiple onchange="angular.element(this).scope().setFiles(this)" />
+    </div>
+    <div ng-show="files.length">
+        <div ng-repeat="file in files.slice(0)">
+            <span>{{file.webkitRelativePath || file.name}}</span>
+            (<span ng-switch="file.size > 1024*1024">
+                <span ng-switch-when="true">{{file.size / 1024 / 1024 | number:2}} MB</span>
+                <span ng-switch-default>{{file.size / 1024 | number:2}} kB</span>
+            </span>)
+        </div>
+        <input type="button" ng-click="uploadFile()" value="Upload" />
+        <div ng-show="progressVisible">
+            <div class="percent">{{progress}}%</div>
+            <div class="progress-bar">
+                <div class="uploaded" ng-style="{'width': progress+'%'}"></div>
+            </div>
+        </div>
+    </div>
+</body> -->
+</html>
+ 
+  <script>
+
+
+  angular.module('app', [], function() {})
+FileUploadCtrl.$inject = ['$scope']
+function FileUploadCtrl(scope) {
+
+    scope.setFiles = function(element) {
+    scope.$apply(function(scope) {
+      console.log('files:', element.files);
+      // Turn the FileList object into an Array
+        scope.files = []
+        for (var i = 0; i < element.files.length; i++) {
+          scope.files.push(element.files[i])
+        }
+      scope.progressVisible = false
+      });
+    };
+
+    scope.uploadFile = function() {
+        var fd = new FormData()
+        for (var i in scope.files) {
+            fd.append("uploadedFile", scope.files[i])
+        }
+        var xhr = new XMLHttpRequest()
+        xhr.upload.addEventListener("progress", uploadProgress, false)
+        xhr.addEventListener("load", uploadComplete, false)
+        xhr.addEventListener("error", uploadFailed, false)
+        xhr.addEventListener("abort", uploadCanceled, false)
+        xhr.open("POST", "/fileupload")
+        scope.progressVisible = true
+        xhr.send(fd)
+    }
+
+    function uploadProgress(evt) {
+        scope.$apply(function(){
+            if (evt.lengthComputable) {
+                scope.progress = Math.round(evt.loaded * 100 / evt.total)
+            } else {
+                scope.progress = 'unable to compute'
+            }
+        })
+    }
+
+    function uploadComplete(evt) {
+        /* This event is raised when the server send back a response */
+        alert(evt.target.responseText)
+    }
+
+    function uploadFailed(evt) {
+        alert("There was an error attempting to upload the file.")
+    }
+
+    function uploadCanceled(evt) {
+        scope.$apply(function(){
+            scope.progressVisible = false
+        })
+        alert("The upload has been canceled by the user or the browser dropped the connection.")
+    }
+}
+
+
+  </script>
+
+
+
+
+
+
+                                              
+                </div>
+        </div>
+        <div class="message-input">
+            <form id="user-message" ng-show="main.mesNew" class="input" ng-submit="main.privatemessage(main.newMsg)" novalidate>
+                <input name="new" class="form-control" ng-model="main.newMsg" required>
+                <button type="submit" class="btn"><i class="fa fa-paper-plane-o fa-lg"></i></button>
+            </form>
+            <form id="user-message" ng-show="main.mesEdit" class="input" ng-submit="main.privatemessage(main.editMsg)" novalidate>
+                <input name="edit" class="form-control" ng-model="main.editMsg" required>
+                <button type="submit" class="btn"><i class="fa fa-paper-plane-o fa-lg"></i></button>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    leftMenuToggle();
+</script>
