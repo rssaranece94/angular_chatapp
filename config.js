@@ -1,5 +1,5 @@
 module.exports = {
-	"database" : "mongodb://admin:admin@ds133231.mlab.com:33231/myapp-ng2",
+	"database" : "", // Your mongodb url
 	"port" : process.env.PORT || 8000,
-	"secretKey" : "IaMvErYbAdBoYcOmEoNlEtScReStEnEwApP"
+	"secretKey" : "" // Your secret key 
 }
