@@ -1,5 +1,5 @@
 # angular_chatapp
-Real time MEAN stack chat application
+Real time MEAN stack(MongoDB, ExpressJs, AngularJs, NodeJs) chat application
 
 This chat application can be deployed locally and also deployed live.
 
